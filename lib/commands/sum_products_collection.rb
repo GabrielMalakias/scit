@@ -2,7 +2,7 @@ class SumProductsCollection
   include ::Scit::Dependencies::AUTOINJECT['http_client']
 
   def call
-    parse(http_client.call(resource)).sum_products_price
+    (1..4).map { |i| parse(http_client.call(resource(i))).sum_products_price }
   end
 
   private
