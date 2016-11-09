@@ -18,9 +18,11 @@ Gem::Specification.new do |s|
   s.require_paths  = ['lib']
 
   s.add_dependency 'virtus'
+  s.add_dependency 'dry-auto_inject'
 
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'rspec-mocks'
   s.add_development_dependency 'rspec-its'
   s.add_development_dependency 'webmock'
+  s.add_development_dependency 'pry'
 end
